@@ -1,4 +1,4 @@
-# BibliotecaElixir
+# Biblioteca Elixir
 
 ## Sobre o projeto 📚
 
@@ -15,7 +15,7 @@ git clone git@github.com:jpbrab0/biblioteca-elixir.git
 2. Acesse o diretório:
 
 ```bash
-cd biblioteca-elixirr
+cd biblioteca-elixir
 ```
 3. Caso necessário configure a conexão com o PostgreSQL em config/dev.exs:
 ```elixir
