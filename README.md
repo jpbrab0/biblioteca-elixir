@@ -38,15 +38,25 @@ config :biblioteca_elixir, BibliotecaElixir.Repo,
 
 ## Endpoints 📜
 
-Url: `http://localhost:400/api` 
+Url: `http://localhost:4000/api` 
 
-`GET`: `/:message`, Retorna uma mensagem atravês desse parametro.
+`GET`: `/books`, Retorna todos os livros cadastrados.
 
-Ex: `/Hello World!`, retorna:
+Ex: `/books`, retorna:
 
 ```json
 {
-  "message": "Hello World!"
+  "books": [
+    {
+      "book": {
+        "autores": "Jeff Kinney",
+        "editora": "Saraiva",
+        "foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
+        "id": 1,
+        "titulo": "Diario de um banana"
+      }
+    }
+  ]
 }
 ```
 
@@ -58,9 +68,9 @@ Corpo da requisição:
 ```json
 {
   "titulo":"Diario de um banana",
-	"editora": "Saraiva",
-	"foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
-	"autores": "Jeff Kinney" 
+"editora": "Saraiva",
+"foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
+"autores": "Jeff Kinney" 
 }
 ```
 
@@ -68,7 +78,7 @@ Retorna:
 
 ```json
 {
-  "message": "Funfou a criação do livro, e é isso ai."
+  "message": "O livro foi criado com sucesso."
 }
 ```
 
