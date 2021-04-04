@@ -8,7 +8,7 @@ defmodule BibliotecaElixirWeb.Router do
   scope "/api", BibliotecaElixirWeb do
     pipe_through :api
 
-    get "/book", ViewBookController, :view
+    get "/books", BookController, :view
     post "/book", CreateBookController, :create
   end
 
