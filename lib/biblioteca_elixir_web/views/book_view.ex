@@ -1,29 +1,21 @@
 defmodule BibliotecaElixirWeb.BookView do
 
-  alias BibliotecaElixir.Book
-
   use BibliotecaElixirWeb, :view
 
-  def render("created.json", %{book: %Book{id: id, titulo: titulo, editora: editora, foto: foto, autores: autores}}) do
-    %{
-      message: "O livro foi criado com sucesso.",
-      book: %{
-        id: id,
-        titulo: titulo,
-        editora: editora,
-        foto: foto,
-        autores: autores
-      }
-    }
+  alias BibliotecaElixirWeb.BookView
+
+  def render("books.json", %{books: books}) do
+    %{books: render_many(books, BookView, "book.json")}
   end
-  def render("view.json", %{book: [%Book{autores: autores, editora: editora, foto: foto, id: id, titulo: titulo}]}) do
+
+  def render("book.json", %{book: book}) do
     %{
       book: %{
-        id: id,
-        titulo: titulo,
-        editora: editora,
-        foto: foto,
-        autores: autores
+        id: book.id,
+        titulo: book.titulo,
+        editora: book.editora,
+        foto: book.foto,
+        autores: book.autores
       }
     }
   end
