@@ -68,9 +68,9 @@ Corpo da requisição:
 ```json
 {
   "titulo":"Diario de um banana",
-"editora": "Saraiva",
-"foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
-"autores": "Jeff Kinney" 
+  "editora": "Saraiva",
+  "foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
+  "autores": "Jeff Kinney" 
 }
 ```
 
