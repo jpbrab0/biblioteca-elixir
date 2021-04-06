@@ -60,7 +60,7 @@ Ex: `/books`, retorna:
 }
 ```
 
-`POST`: `/book`, Cria um livro no banco de dados.
+`POST`: `/books`, Cria um livro no banco de dados.
 
 Ex:
 
