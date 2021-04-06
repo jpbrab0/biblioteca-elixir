@@ -9,7 +9,7 @@ defmodule BibliotecaElixirWeb.Router do
     pipe_through :api
 
     get "/books", BookController, :view
-    post "/book", CreateBookController, :create
+    post "/books", CreateBookController, :create
   end
 
   # Enables LiveDashboard only for development
