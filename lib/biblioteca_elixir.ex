@@ -1,7 +1,7 @@
 defmodule BibliotecaElixir do
-  alias BibliotecaElixir.Book.Create, as: BookCreate
-  alias BibliotecaElixir.Book.View, as: BookView
+  alias BibliotecaElixir.Book.Methods
 
-  defdelegate create_book(params), to: BookCreate, as: :create
-  defdelegate view_book, to:  BookView, as: :view
+  defdelegate view_books, to: Methods, as: :get_books
+  defdelegate view_book!(id), to: Methods, as: :get_book!
+  defdelegate create_book(params), to: Methods, as: :create
 end
