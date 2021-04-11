@@ -60,6 +60,22 @@ Ex: `/books`, retorna:
 }
 ```
 
+`GET`: `/books/book/:id`, Retorna os dados de um livro específico
+
+Ex: `/books/book/1`, retorna:
+
+```json
+{
+  "book": {
+    "autores": "Jeff Kinney",
+    "editora": "Saraiva",
+    "foto": "https://images-na.ssl-images-amazon.com/images/I/51fn5ioe+dL._SX337_BO1,204,203,200_.jpg",
+    "id": 1,
+    "titulo": "Diario de um banana"
+  }
+}
+```
+
 `POST`: `/books`, Cria um livro no banco de dados.
 
 Ex:
