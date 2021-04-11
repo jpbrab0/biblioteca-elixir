@@ -19,4 +19,9 @@ defmodule BibliotecaElixirWeb.BookView do
       }
     }
   end
+  def render("created.json", _) do
+    %{
+      message: "O livro foi criado com sucesso.",
+    }
+  end
 end
